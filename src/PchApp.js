@@ -11,7 +11,7 @@ function PchApp() {
   // Function to fetch categories from API
   const pchGetCategories = async () => {
     try {
-      const pchCateResponse = await axios.get('/pchCategory');
+      const pchCateResponse = await axios.get('PchCategory');
       setPchCategories(pchCateResponse.data);
     } catch (error) {
       console.error('Error fetching categories:', error);
